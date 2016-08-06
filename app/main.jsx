@@ -1,10 +1,10 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
-var HelloWorld = React.createClass({
-  render: function () {
+class HelloWorld extends Component {
+  render() {
     return <div>Hello World</div>;
   }
-});
+}
 
 ReactDOM.render(<HelloWorld />, document.querySelector('#react-mount'));
